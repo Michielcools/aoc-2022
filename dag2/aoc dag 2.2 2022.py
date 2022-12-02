@@ -5,7 +5,6 @@ punten = {0:3, 1:1, 2:2, 3:3, 4:1}
 totaalscore = 0
 for line in file:
     enemygetal = enemyvertaal[line[0]]
-    totaalscore += vertaal[line[2]] + 3
-    totaalscore += punten[enemygetal + vertaal[line[2]]/3]
+    totaalscore += vertaal[line[2]] + 3 + punten[enemygetal + vertaal[line[2]]/3]
 print(totaalscore)
 
